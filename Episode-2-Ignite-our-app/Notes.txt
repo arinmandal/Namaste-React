@@ -1,0 +1,14 @@
+1) What is NPM?
+2) What is Parcel?
+3) Type of dependencies
+4) Whats the different between tilde(~) and caret(^) 5) in package.json
+6) Package-lock.json
+7) Transitive Dependency
+8) NPX 
+
+npm - npm means installing the package
+npx - means execute that package
+
+Exploring tools:
+Parcel - https://parceljs.org/
+browserslist - https://browserslist.dev/?q=bGFzdCAyIHZlcnNpb25z

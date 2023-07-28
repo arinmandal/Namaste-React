@@ -1,3 +1,7 @@
+import React from "react";
+import ReactDOM  from "react-dom/client";
+
+
 const heading = React.createElement("h1", { id: "heading" }, "Hello World from React!");
 // console.log(heading) this an object that return to the console.
 const root = ReactDOM.createRoot(document.getElementById("root"))
@@ -26,13 +30,10 @@ const root = ReactDOM.createRoot(document.getElementById("root"))
 </div> */}
 
 const parent = React.createElement("div", { id: "parent" },
-  [React.createElement("div", { id: "child" }, React.createElement("h1", {}, "Hello H1 from First Child Div"
-  ))], [React.createElement("div", { id: "child2" }, React.createElement("h2", {}, "Hello H2 from Second Child Div"
+  [React.createElement("div", { id: "child" }, React.createElement("h1", {}, "This is namaste react 🚀"
+  ))], [React.createElement("div", { id: "child2" }, React.createElement("h2", {}, "Hello Hello"
   ))]
 
 )
-
-
-
 
 root.render(parent)
