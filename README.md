@@ -15,5 +15,5 @@
 - Diagnosis
 - Error handling
 - HTTPs
-- Tree Shaking
-- Different build and production (we need to remove "main":"App.js" from package.json)
+- Tree Shaking- Different build and production
+  - We need to remove "main": "app.js" from the package.json when building our app for production. 
