@@ -19,6 +19,7 @@ Theory
 
 Coding
 ------
+- in your existing project
 1) initialize npm into your repo
 2) install react and react-dom
 3) remove CDN links of react
