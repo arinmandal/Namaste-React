@@ -18,7 +18,7 @@ const heading = React.createElement("h1", {id="heading"}, "Hello World!!")
 
 ## Babel
 
-    Babel is the transpiler / compiler of JavaScript, that convert the modern javascript code that JS Engine / Browser can understand.
+Babel is the transpiler / compiler of JavaScript, that convert the modern javascript code that JS Engine / Browser can understand.
 
 ```
 JSX - const heading = <h1 id="heading">Hello World!!</h1>;
