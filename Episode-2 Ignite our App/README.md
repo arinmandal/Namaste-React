@@ -1,5 +1,5 @@
 # Episode 2 - Ignite Our App
-
+## NOTES
 ## What is NPM?
 
 NPM is a package manager that used to manage dependencies for packages.
