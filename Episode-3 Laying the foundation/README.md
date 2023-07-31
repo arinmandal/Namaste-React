@@ -1,5 +1,5 @@
 # Episode 3 - Laying the foundation
-
+## NOTES
 ## JSX
 
 JSX is a JavaScript syntax which is easier to create react element. without any createElement() or appendChild() methods.
