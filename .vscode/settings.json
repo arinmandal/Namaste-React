@@ -1,3 +1,6 @@
 {
-  "cSpell.words": ["Namaste"]
+  "prettier.bracketSameLine": false,
+  "prettier.jsxSingleQuote": true,
+  "prettier.proseWrap": "preserve",
+  "prettier.printWidth": 50
 }

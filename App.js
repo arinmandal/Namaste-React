@@ -1,39 +1,44 @@
 import React from "react";
-import ReactDOM  from "react-dom/client";
+import ReactDOM from "react-dom/client";
 
+// React Element
+// without jsx
+// const heading = React.createElement(
+//   "h1",
+//   { id: "heading" },
+//   "Namaste React 🚀",
+// );
+// console.log(heading);
 
-const heading = React.createElement("h1", { id: "heading" }, "Hello World from React!");
-// console.log(heading) this an object that return to the console.
-const root = ReactDOM.createRoot(document.getElementById("root"))
-// root.render(heading)
+//! JSX => React.createElement => ReactElement => JS object => HTML Element(render)
 
-{/* <div id="parent">
-  <div id="child">
-    <h1></h1>
-  </div>
-</div> */}
-// ? ReactElement(Object) => HTML(Browser Understands)
-//! CORE REACT
-// const parent = React.createElement("div", { id: "parent" },
-//   React.createElement("div", { id: "child" },
-//     React.createElement("h1", {}, "I'm h1 tag")
-//   )
+// //* With JSX
+
+// const love = 3000;
+// const jsxHeading = (
+//   <h1 className='heading'>
+//     {/* <h2>Love you {love}</h2> */}
+//     Namaste React 🚀 from JSX
+//   </h1>
 // );
 
-{/* <div id="parent">
-  <div id="child">
-    <h1>Hello World</h1>
-  </div>
-  <div id="child2">
-    <h2>Hello World 2</h2>
-  </div>
-</div> */}
+//* React Functional Component
+// const Title = () => (
+//   <h1 className='title'>Namaste React🚀</h1>
+// );
 
-const parent = React.createElement("div", { id: "parent" },
-  [React.createElement("div", { id: "child" }, React.createElement("h1", {}, "This is namaste react 🚀"
-  ))], [React.createElement("div", { id: "child2" }, React.createElement("h2", {}, "Hello Hello"
-  ))]
+// const HeadingComponent = () => {
+//   return (
+//     <div className='container'>
+//       <Title />
+//       <h1 className='heading'>
+//         React Functional Component
+//       </h1>
+//     </div>
+//   );
+// };
+// const root = ReactDOM.createRoot(
+//   document.getElementById("root"),
+// );
 
-)
-
-root.render(parent)
+// root.render(<HeadingComponent/>);
