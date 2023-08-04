@@ -19,3 +19,7 @@
 
 
 - ### 📝[Assignment](https://github.com/arinmandal/Namaste-React/tree/main/ASSIGNMENT/Episode-3)
+
+## 📚[Chapter 04 - Let's get hooked](https://github.com/arinmandal/Namaste-React/tree/main/Episode-4%20Talk%20is%20Cheap%20show%20me%20the%20code)
+
+- ### 📝[Assignment](https://github.com/arinmandal/Namaste-React/tree/main/ASSIGNMENT/Episode-4)
