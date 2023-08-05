@@ -57,8 +57,11 @@ img {
   color: #ffffff;
 }
 
+.nav-list>ul>li:hover {
+  cursor: pointer;
+}
 
-.BodyComponent {
+.main {
   width: 100%;
 }
 
@@ -79,7 +82,7 @@ img {
   outline: none;
 }
 
-.search-btn {
+.btn {
   padding: 7px 15px;
   border-radius: 25px;
   border-radius: 25px;
@@ -87,6 +90,10 @@ img {
   outline: none;
   font-size: 13px;
   margin-left: 3px;
+}
+
+.btn:hover {
+  cursor: pointer;
 }
 
 .res-container {
@@ -121,7 +128,7 @@ img {
   overflow: hidden;
 }
 
-.card-image > img {
+.card-image>img {
   width: 100%;
 }
 

@@ -4,8 +4,8 @@
   "description": "\"A food ordering App\"",
   "main": "script.js",
   "scripts": {
-    "start": "parcel ./index.html",
-    "build":"parcel ./index.html",
+    "start": "parcel ./public/index.html",
+    "build":"parcel ./public/index.html",
     "test": "\"test\""
   },
   "author": "\"Arin Mandal\"",
