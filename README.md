@@ -25,3 +25,5 @@
 - ### 📝[Assignment](https://github.com/arinmandal/Namaste-React/tree/main/ASSIGNMENT/Episode-4)
 
 ## 📚[Chapter 05 - Let's get hooked](https://github.com/arinmandal/Namaste-React/tree/main/Episode-5%20Let's%20get%20hooked)
+
+- ### 📝[Assignment](https://github.com/arinmandal/Namaste-React/tree/main/ASSIGNMENT/Episode-5)
