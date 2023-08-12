@@ -1,5 +1,5 @@
 import RestaurantCard from "./RestaurantCard";
-import restaurantList from "../utils/mockData";
+import restaurantList from "../utils/mockData"
 import { useState } from "react";
 const Body = () => {
   // State Variable - super powerful variable
@@ -13,10 +13,10 @@ const Body = () => {
           <button
             className='filter-btn btn'
             onClick={() => {
-              const filterelist = restaurantList.filter(
-                res => res.info.avgRatingString > 4.2,
+              const filterlist = restaurantList.filter(
+                res => res.card.card.info.avgRating > 4.2,
               );
-              setRestaurantList(filterelist);
+              setRestaurantList(filterlist);
             }}
           >
             Top Rated Restaurants
@@ -26,10 +26,11 @@ const Body = () => {
       <div className='res-container'>
         {RestaurantList.map(restaurant => (
           <RestaurantCard
-            key={restaurant.info.id}
-            restaurantData={restaurant}
+            key={restaurant.card.card.info.id}
+            restaurantData={restaurant.card.card}
           />
-        ))}
+        )
+        )}
       </div>
     </div>
   );

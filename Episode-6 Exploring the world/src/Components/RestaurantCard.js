@@ -4,7 +4,7 @@ const RestaurantCard = ({ restaurantData }) => {
     name,
     cuisines,
     costForTwo,
-    avgRatingString,
+    avgRating,
     cloudinaryImageId,
   } = restaurantData?.info;
   return (
@@ -16,14 +16,14 @@ const RestaurantCard = ({ restaurantData }) => {
               CDN_URL +
               cloudinaryImageId
             }
-            // alt=''
+          // alt=''
           />
         </div>
         <div className='card-details'>
           <h3>{name}</h3>
           <h4>{cuisines.join(",")}</h4>
           <h4>{costForTwo}</h4>
-          <h4>rating : {avgRatingString}</h4>
+          <h4>rating : {avgRating}</h4>
           <h4>{restaurantData.info.sla.deliveryTime} minutes</h4>
         </div>
       </div>
