@@ -12,6 +12,7 @@ Monolith means composed all in one piece. The Monolithic application describes a
 - Notification module — responsible for sending email notifications whenever needed.
 
   ![Monolith Architechture of E-Commerce Application](1_TRmj8lWyzCufEGjxCONAog.webp)
+
 ### Benefits :
 
 - Simple to develop — At the beginning of a project it is much easier to go with Monolithic Architecture.
@@ -28,7 +29,6 @@ Monolith means composed all in one piece. The Monolithic application describes a
 - Reliability — Bug in any module (e.g. memory leak) can potentially bring down the entire process. Moreover, since all instances of the application are identical, that bug impact the availability of the entire application
 - Regardless of how easy the initial stages may seem, Monolithic applications have difficulty to adopting new and advance technologies. Since changes in languages or frameworks affect an entire application, it requires efforts to thoroughly work with the app details, hence it is costly considering both time and efforts.
 
-
 ## MicroServices Architecture
 
 Microservices are an approach to application development in which a large application is built as a suite of modular services (i.e. loosely coupled modules/components). Each module supports a specific business goal and uses a simple, well-defined interface to communicate with other sets of services.
@@ -37,42 +37,78 @@ Instead of sharing a single database as in Monolithic application, each microser
 
 Consider the same example of the e-commerce application, which consists of several components/modules. Define each component/module as a separate loosely coupled service depending on the requirement, which may collaborate with each other based on the scenario. We can have following services for a complete application:
 
- - Authorization Service — Responsible for authorizing customer.
- - Order Service — takes an order and process it.
- - Catalog Service — Manage products and check products inventory.
- -  Cart Service — Manage user cart, this service can utilize Catalog      service as a data source.
- - Payment Service — Manage and Authorize payments.
- - Shipping Service — Ships ordered products.
+- Authorization Service — Responsible for authorizing customer.
+- Order Service — takes an order and process it.
+- Catalog Service — Manage products and check products inventory.
+- Cart Service — Manage user cart, this service can utilize Catalog service as a data source.
+- Payment Service — Manage and Authorize payments.
+- Shipping Service — Ships ordered products.
 
-    ![MicroServices Architecture of E-Commerce Application](1_3mY6LcrO3o0nkpAZkNjF0Q.webp)
+  ![MicroServices Architecture of E-Commerce Application](1_3mY6LcrO3o0nkpAZkNjF0Q.webp)
 
 ### Benefits:
 
-  - Microservices Enables the continuous delivery and deployment of large, complex applications.
-  - Better testability — services are smaller and faster to test.
-  - Better deployability — services can be deployed independently.
-  - It enables you to organize the development effort around multiple teams. Each team is responsible for one or more single service. Each team can develop, deploy and scale their services independently of all of the other teams.
-  - Each microservice is relatively small
-  - Comfortable for a developer to understand
-  - The IDE is faster making developers more productive
-  - The application starts faster, which makes developers more productive, and speeds up deployments
-  - Improved fault isolation. For example, if there is a memory leak in one service then only that service is affected. The other services continue to handle requests. In comparison, one misbehaving component of a monolithic architecture can bring down the entire system.
- - Microservices Eliminates any long-term commitment to a technology stack. When developing a new service you can pick a new technology stack. Similarly, when making major changes to an existing service you can rewrite it using a new technology stack.
+- Microservices Enables the continuous delivery and deployment of large, complex applications.
+- Better testability — services are smaller and faster to test.
+- Better deployability — services can be deployed independently.
+- It enables you to organize the development effort around multiple teams. Each team is responsible for one or more single service. Each team can develop, deploy and scale their services independently of all of the other teams.
+- Each microservice is relatively small
+- Comfortable for a developer to understand
+- The IDE is faster making developers more productive
+- The application starts faster, which makes developers more productive, and speeds up deployments
+- Improved fault isolation. For example, if there is a memory leak in one service then only that service is affected. The other services continue to handle requests. In comparison, one misbehaving component of a monolithic architecture can bring down the entire system.
+- Microservices Eliminates any long-term commitment to a technology stack. When developing a new service you can pick a new technology stack. Similarly, when making major changes to an existing service you can rewrite it using a new technology stack.
 
 ### Drawbacks:
 
-  - Developers must deal with the additional complexity of creating a distributed system.
-  - Developer tools/IDEs are oriented on building monolithic applications and don’t provide explicit support for developing distributed applications.
-  - Testing is more difficult as compared to Monolith applications.
-  - Developers must implement the inter-service communication mechanism.
-  - Implementing use cases that span multiple services without using distributed transactions is difficult.
-  - Implementing use cases that span multiple services requires careful coordination between the teams.
-  - Deployment complexity. In production, there is also the operational complexity of deploying and managing a system comprised of many different service types.
-  - Increased memory consumption. The microservice architecture replaces N monolithic application instances with NxM services instances. If each service runs in its Container, which is usually necessary to isolate the instances, then there is the overhead of M times as many Containers.
+- Developers must deal with the additional complexity of creating a distributed system.
+- Developer tools/IDEs are oriented on building monolithic applications and don’t provide explicit support for developing distributed applications.
+- Testing is more difficult as compared to Monolith applications.
+- Developers must implement the inter-service communication mechanism.
+- Implementing use cases that span multiple services without using distributed transactions is difficult.
+- Implementing use cases that span multiple services requires careful coordination between the teams.
+- Deployment complexity. In production, there is also the operational complexity of deploying and managing a system comprised of many different service types.
+- Increased memory consumption. The microservice architecture replaces N monolithic application instances with NxM services instances. If each service runs in its Container, which is usually necessary to isolate the instances, then there is the overhead of M times as many Containers.
 
 ### Difference between the Monolith and Microservices Architecture
 
- ![Alt text](1_Un9W-mw18NLtuQdsBNytJQ.webp)
+![Alt text](1_Un9W-mw18NLtuQdsBNytJQ.webp)
+
+## Best approach for fetch API in React App
+
+![First Approach](image.png)
+
+![Second Approach](image-1.png)
+
+## UseEffects Hooks
+
+useEffect is a React Hook that lets you synchronize a component with an external system.
+
+ ### useEffect(setup, dependencies?)
+
+```
+useEffect(()=>{
+  console.log('useEffect Called')
+},[])
+```
 
 
+## Optional Chaining
 
+The optional chaining(?.) operator accesses an objects property or calls a function. if the object accessed or function called using this operator is undefined or null, the expression short circuits and evaluates to undefined instead of throwing an error.
+
+
+## Shimmer UI
+
+A shimmer UI is a version of the UI that doesn’t contain actual content, but instead mimics the layout and shapes of the content that will eventually appear. It uses a gradient animation that creates a shimmering effect over the placeholders, giving the user a sense of motion and progress.
+
+### Benefits 
+A shimmer UI has many benefits over traditional loading indicators:
+- It improves the perceived performance of the app by making it seem faster and more responsive.
+- It reduces the cognitive load on the user by providing visual cues about the type and structure of the content that is being loaded.
+- It eliminates surprises and confusion by showing a consistent and predictable UI before and after loading.
+- It enhances the aesthetic appeal and user satisfaction by creating a smooth and elegant transition from loading to loaded1.
+
+
+## Conditional Rendering
+Conditional rendering in react works the same way condition works in JavaScript. use JavaScript operator like if or the conditional operator to create elements representing the current state, and let react update the UI to match them.
