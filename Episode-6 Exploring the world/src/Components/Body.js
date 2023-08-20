@@ -30,7 +30,7 @@ const Body = () => {
   return RestaurantList.length === 0 ? <ShimmerUI /> : (
     <div className='main'>
       <div className='search-container'>
-        <input type='search' placeholder='Search your favorite food' value={searchText} onChange={(e) => setSearchText(e.target.value)} />
+        <input type='search' placeholder='Search your favorite restaurant' value={searchText} onChange={(e) => setSearchText(e.target.value)} />
         <button className='search-btn btn'
           onClick={() => {
             const filterSearch = RestaurantList.filter((res) => res.card.card.info.name.toLowerCase().includes(searchText.toLowerCase()))
