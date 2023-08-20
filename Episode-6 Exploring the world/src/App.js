@@ -5,7 +5,8 @@ import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import Body from "./Components/Body";
 import About from "./Components/About";
-import Error from "./Components/Error"
+import Error from "./Components/Error";
+import RestaurantMenu from "./Components/RestaurantMenu"
 import {
   createBrowserRouter,
   RouterProvider, Outlet
@@ -37,6 +38,10 @@ const appRouter = createBrowserRouter([
       {
         path: "/contact",
         element: <Contact />
+      },
+      {
+        path: "/restaurants/:resId",
+        element: <RestaurantMenu />
       }
     ],
     errorElement: <Error />
