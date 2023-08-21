@@ -3,6 +3,7 @@ import ShimmerUI from "./ShimmerUI";
 // import restaurantList from "../utils/mockData"
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
+import { RESTAURANT } from "../utils/constant";
 const Body = () => {
   // State Variable - super powerful variable
   const [RestaurantList, setRestaurantList] = useState([]);
@@ -14,7 +15,8 @@ const Body = () => {
   }, [])
 
   const fetchData = async () => {
-    const data = await fetch(`https://www.swiggy.com/dapi/restaurants/search/v3?lat=22.572646&lng=88.36389500000001&str=Restaurants%20in%20kolkata&trackingId=undefined&submitAction=ENTER&queryUniqueId=d8d50207-c049-6902-2c11-98faf582567a`);
+    const data = await fetch(RESTAURANT);
+
     const json = await data.json();
     // Optional Chaining
     setRestaurantList(json?.data?.cards[1]?.groupedCard?.cardGroupMap?.RESTAURANT?.cards
@@ -53,7 +55,7 @@ const Body = () => {
       </div>
       <div className='res-container'>
         {filterRestaurant.map(restaurant => (
-          <Link key={restaurant.card.card.info.id} to={"/restaurants/" + restaurant.card.card.info.id }><RestaurantCard
+          <Link className="link" key={restaurant.card.card.info.id} to={"/restaurants/" + restaurant.card.card.info.id }><RestaurantCard
             
             restaurantData={restaurant.card.card}
           /></Link>
