@@ -71,7 +71,7 @@ const {resId} = useParam();
 ```
 
 
-### Reference
+### References
 
 
 - [React Router](https://reactrouter.com/en/main)
