@@ -2,16 +2,15 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./styles/styles.css"
 import Header from "./Components/Header";
-import Footer from "./Components/Footer";
 import Body from "./Components/Body";
-import About from "./Components/About";
-import Error from "./Components/Error";
-import RestaurantMenu from "./Components/RestaurantMenu"
+import About from "./Pages/About";
+import Error from "./Pages/Error";
+import RestaurantMenu from "./Pages/RestaurantMenu"
 import {
   createBrowserRouter,
   RouterProvider, Outlet
 } from "react-router-dom";
-import Contact from "./Components/Contact";
+import Contact from "./Pages/Contact";
 // *! not using key(not acceptable in react it will give you an error) <<< index as key <<< using unique id 
 
 const App = () => {
