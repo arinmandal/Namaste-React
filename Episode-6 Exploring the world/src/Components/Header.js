@@ -22,9 +22,9 @@ const Header = () => {
       </div>
       <div className='nav-list'>
         <ul>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/about">About</Link></li>
-          <li><Link to="/contact">Contact Us</Link></li>
+          <li><Link className="link" to="/">Home</Link></li>
+          <li><Link className="link" to="/about">About</Link></li>
+          <li><Link className="link" to="/contact">Contact Us</Link></li>
           <li>Cart</li>
           <li>
             <button className="btn"
