@@ -163,3 +163,15 @@ li > .link:visited, :active {
     font-size: 2vw;
   }
 }
+
+/* User Card */
+
+.AboutPage{
+  margin: 1em;
+}
+.user-card{
+  width: 350px;
+  font-family: "Roboto";
+  padding: 4px;
+  border: 1px solid black;
+}
