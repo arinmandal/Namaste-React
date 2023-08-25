@@ -4,6 +4,7 @@ import ShimmerUI from "./ShimmerUI";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { RESTAURANT } from "../utils/constant";
+import useOnlineStatus from "../utils/useOnlineStatus";
 const Body = () => {
   // State Variable - super powerful variable
   const [RestaurantList, setRestaurantList] = useState([]);
@@ -28,6 +29,14 @@ const Body = () => {
   // if (RestaurantList.length === 0) {
   //   return (<ShimmerUI />)
   // }
+
+  const onlineStatus = useOnlineStatus();
+
+  if (onlineStatus === false) return (
+    <div className="offile">
+    <h1 className="offile-text">Look like you're offline, please check your internet connection</h1>
+  </div>)
+
 
   return RestaurantList.length === 0 ? <ShimmerUI /> : (
     <div className='main'>
@@ -55,8 +64,8 @@ const Body = () => {
       </div>
       <div className='res-container'>
         {filterRestaurant.map(restaurant => (
-          <Link className="link" key={restaurant.card.card.info.id} to={"/restaurants/" + restaurant.card.card.info.id }><RestaurantCard
-            
+          <Link className="link" key={restaurant.card.card.info.id} to={"/restaurants/" + restaurant.card.card.info.id}><RestaurantCard
+
             restaurantData={restaurant.card.card}
           /></Link>
         )
