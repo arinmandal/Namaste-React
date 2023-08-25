@@ -33,3 +33,9 @@
 
 ## 📚[Episode 07 - Finding the path](https://github.com/arinmandal/Namaste-React/tree/main/Episode-7%20Finding%20the%20path)
 - ### 📝[Assignment](https://github.com/arinmandal/Namaste-React/tree/main/ASSIGNMENT/Episode-7)
+
+## 📚[Episode 08 - Let's get Classy](https://github.com/arinmandal/Namaste-React/tree/main/Episode-8%20Let's%20get%20classy)
+- ### 📝[Assignment](https://github.com/arinmandal/Namaste-React/tree/main/ASSIGNMENT/Episode-8)
+
+## 📚[Episode 09 - Optimising our app](https://github.com/arinmandal/Namaste-React/tree/main/Episode-9%20Optimizing%20Our%20App)
+- ### 📝[Assignment](https://github.com/arinmandal/Namaste-React/tree/main/ASSIGNMENT/Episode-9)
