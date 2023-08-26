@@ -1,4 +1,15 @@
 # Episode 3 - Laying the foundation
+## Tropic
+- JSX Introduced & its usages
+- Transpiling the JSX
+- What is Babel
+- Usage of class & className in JSX
+- What are React Components
+- Class based & Functional Components
+- Component Composition
+- Cross Site Scripting
+- JSX Expression
+- React Fragments
 ## NOTES
 ## JSX
 
