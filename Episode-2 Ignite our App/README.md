@@ -1,4 +1,11 @@
 # Episode 2 - Ignite Our App
+## Tropic
+- What is NPM
+- Installing important packages, Bundler
+- What is Parcel
+- What are node modules
+- Various files inside a React App
+
 ## NOTES
 ## What is NPM?
 
