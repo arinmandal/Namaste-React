@@ -1,5 +1,11 @@
 # Episode 09 - Optimising our app
 
+## Tropic
+- Custom Hooks.
+- Single Responsibility Principle
+- Creating our own Custom Hook!
+- Dynamic bundling.
+- Suspense Component.
 ## Single Responsibility Principle
 - Reusability
 - Maintainable

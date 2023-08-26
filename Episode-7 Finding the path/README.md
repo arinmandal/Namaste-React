@@ -1,5 +1,15 @@
 # Episode 07 - Finding the path
-
+## Tropic
+- React Router.
+- React-router-dom
+- useRouteError Hook
+- Children Routes
+- Outlet Component.
+- Link Component
+- More about SPA's
+- UseParams Hook
+- Dynamic Routing
+- 2 types of Routing : Client Side Routing & Server-side Routing.
 ## Routing in React
 
 Configure Router in React App

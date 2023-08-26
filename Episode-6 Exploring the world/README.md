@@ -1,5 +1,15 @@
 # Episode-6 Exploring the world
-
+## Tropic
+- Monolith Architecture.
+- Microservices.
+- useEffect Hook
+- CORS Chrome Extension
+- Shimmer UI
+- Conditional Rendering
+- Reconciliation & Diff Algorithm.
+- OnChange handler.
+- Building a Search Functionality.
+- Working with the API data.
 ## Monolith Architecture
 
 Monolith means composed all in one piece. The Monolithic application describes a single-tiered software application in which different components combined into a single program from a single platform.

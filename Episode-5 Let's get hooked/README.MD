@@ -1,5 +1,14 @@
 # Episode-5 Let's get hooked
-
+## Tropic
+- React File structure.
+- 2 types of Import & Export: named & multiple
+- what are React Hooks
+- useState Hook
+- Virtual DOM
+- Reconciliation Algorithm
+- Diff Algorithm
+- What is React Fiber
+- React Fiber Architecture
 ### Stracture of food order app project like Swiggy.
 
 ```

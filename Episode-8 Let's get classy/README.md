@@ -1,5 +1,10 @@
 # Episode 8 Let's get Classy
-
+## Tropic
+- Class based components.
+- Creating our own Class based components.
+- Life cycle of Class based components.
+- React Lifecycle Methods.
+- 
 ## Class based Component
 
 When creating a React component, the component's name must start with an upper case letter.
