@@ -1,5 +1,17 @@
 # Episode 1 - Inception 
+## Tropic
+- VSCode setup
+- Hello World Program by using plain HTMl
+- Hello World Program using Vanilla JavaScript
+- What is CDN
+- Hello World Program in React
+- Nested Elements
+- Need of JSX
+- Library v/s Framework
+- Advantages/Specialties of React
 # NOTES
+
+
 ## What is CDN?
 A content delivery network (CDN) is a geographically distributed group of servers that caches content close to end users. A CDN allows for the quick transfer of assets needed for loading Internet content, including HTML pages, JavaScript files, stylesheets, images, and videos.
 
