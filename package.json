@@ -4,8 +4,8 @@
   "description": "This is Namaste React by Akshay Saini",
   "scripts": {
     "test": "jest",
-    "start": "parcel ./public/index.html",
-    "build": "parcel build ./public/index.html"
+    "start": "parcel ./index.html",
+    "build": "parcel build ./index.html"
   },
   "repository": {
     "type": "git",
