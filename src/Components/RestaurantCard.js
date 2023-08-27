@@ -9,9 +9,9 @@ const RestaurantCard = ({ restaurantData }) => {
   } = restaurantData?.info;
   return (
     <div className="card-container">
-      <div className='card'>
-        <div className='card-image'>
-          <img
+      <div className='card w-[250px] h-[330px] border my-2 bg-slate-400 rounded-lg overflow-hidden transition ease-out duration-300 hover:shadow-lg hover:shadow-blue-500'>
+        <div className='card-image h-3/6 overflow-hidden'>
+          <img className="w-full "
             src={
               CDN_URL +
               cloudinaryImageId
@@ -19,7 +19,7 @@ const RestaurantCard = ({ restaurantData }) => {
           // alt=''
           />
         </div>
-        <div className='card-details'>
+        <div className='card-details px-2 text-white font-semibold'>
           <h3>{name}</h3>
           <h4>{cuisines.join(",")}</h4>
           <h4>{costForTwo}</h4>

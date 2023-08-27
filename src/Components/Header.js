@@ -8,9 +8,9 @@ const Header = () => {
 
   const onlineStatus = useOnlineStatus();
   return (
-    <div className='header'>
-      <div className='logo-container'>
-        <span>
+    <div className='header w-full bg-slate-500 flex items-center justify-between px-4'>
+      <div className='logo-container w-20 flex'>
+        <span className="font-bold text-white">
           The
           Foodie
           Express
@@ -21,15 +21,15 @@ const Header = () => {
           className='logo'
         />
       </div>
-      <div className='nav-list'>
-        <ul>
-          <li><Link className="link" to="/">Home</Link></li>
-          <li><Link className="link" to="/grocery">Grocery</Link></li>
-          <li><Link className="link" to="/about">About</Link></li>
-          <li><Link className="link" to="/contact">Contact Us</Link></li>
-          <li>Cart</li>
-          <li>
-            <button className="btn"
+      <div className='nav-list text-white font-bold flex items-center justify-center'>
+        <ul className="flex">
+          <li className="px-4"><Link className="link" to="/">Home</Link></li>
+          <li className="px-4"><Link className="link" to="/grocery">Grocery</Link></li>
+          <li className="px-4"><Link className="link" to="/about">About</Link></li>
+          <li className="px-4"><Link className="link" to="/contact">Contact Us</Link></li>
+          <li className="px-4">Cart</li>
+          <li className="px-4">
+            <button className="btn rounded-2xl bg-gray-300 py-1 px-4"
               onClick={
                 () => {
                   btnName === "login" ? setbtnName("logout") : setbtnName("login");

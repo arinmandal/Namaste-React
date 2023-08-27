@@ -45,7 +45,7 @@
 
 import React, { Suspense, lazy } from "react";
 import ReactDOM from "react-dom/client";
-import "./src/styles/styles.css"
+import "/src/styles/index.css"
 import Header from "/src/Components/Header"
 import Footer from "/src/Components/Footer"
 import Body from "/src/Components/Body";

@@ -1,6 +1,4 @@
 import React from "react"
-import { json } from "react-router-dom";
-
 class UserClass extends React.Component {
 
   constructor(props) {
@@ -29,11 +27,13 @@ class UserClass extends React.Component {
     const { name, location, avatar_url
     } = this.state.userInfo;
     return (
-      <div className="user-card">
-        <img src={avatar_url} alt="" />
-        <h2>Name:{name}</h2>
-        <h3>Location: {location}</h3>
-        <h3>Contact: arinmandal40@gmail.com</h3>
+      <div className="user-card mx-4 flex items-center w-[450px] h-[250px] border-2 bg-slate-300 rounded-md">
+        <img className="w-[150px] h-[150px] rounded-full" src={avatar_url} alt="" />
+        <div className="user-details pl-2 font-bold">
+          <h2>Name: {name}</h2>
+          <h3>Location: {location}</h3>
+          <h3>Contact: arinmandal40@gmail.com</h3>
+        </div>
 
       </div>
     )
