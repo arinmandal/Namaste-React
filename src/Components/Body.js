@@ -1,4 +1,5 @@
-import RestaurantCard from "./RestaurantCard";
+// import RestaurantCard from "./RestaurantCard";
+import RestaurantCard from "./RestaurantCard"
 import ShimmerUI from "./ShimmerUI";
 // import restaurantList from "../utils/mockData"
 import { Link } from "react-router-dom";
