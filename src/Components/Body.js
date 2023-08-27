@@ -34,8 +34,8 @@ const Body = () => {
   const onlineStatus = useOnlineStatus();
 
   if (onlineStatus === false) return (
-    <div className="offile">
-    <h1 className="offile-text">Look like you're offline, please check your internet connection</h1>
+    <div className="offile h-screen">
+    <h1 className="offile-text text-4xl font-bold">Look like you're offline, please check your internet connection</h1>
   </div>)
 
 
