@@ -1,5 +1,5 @@
 // import RestaurantCard from "./RestaurantCard";
-import RestaurantCard from "./RestaurantCard"
+import RestaurantCard, {withPromotedLabel} from "./RestaurantCard"
 import ShimmerUI from "./ShimmerUI";
 // import restaurantList from "../utils/mockData"
 import { Link } from "react-router-dom";
@@ -11,6 +11,10 @@ const Body = () => {
   const [RestaurantList, setRestaurantList] = useState([]);
   const [filterRestaurant, setfilterRestaurant] = useState([]);
   const [searchText, setSearchText] = useState("");
+
+  // Restaurant card with promoted lebel
+  
+  const RestaurantCardWithPromoted = withPromotedLabel(RestaurantCard);
 
   useEffect(() => {
     fetchData();
@@ -31,6 +35,7 @@ const Body = () => {
   //   return (<ShimmerUI />)
   // }
 
+  //*! onlineStatus hook
   const onlineStatus = useOnlineStatus();
 
   if (onlineStatus === false) return (
@@ -65,10 +70,12 @@ const Body = () => {
       </div>
       <div className='res-container h-full w-full px-4 flex justify-evenly flex-wrap '>
         {filterRestaurant.map(restaurant => (
-          <Link className="link" key={restaurant.card.card.info.id} to={"/restaurants/" + restaurant.card.card.info.id}><RestaurantCard
-
+          <Link className="link" key={restaurant.card.card.info.id} to={"/restaurants/" + restaurant.card.card.info.id}>
+            {restaurant.card.promoted ? <RestaurantCardWithPromoted restaurantData={restaurant.card.card}/> : <RestaurantCard
+            // if the restaurant is promoted add a promoted label to it.
             restaurantData={restaurant.card.card}
-          /></Link>
+            /> }
+          </Link>
         )
         )}
       </div>
