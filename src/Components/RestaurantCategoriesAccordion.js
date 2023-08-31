@@ -1,6 +1,6 @@
 import React from 'react'
 import { Itemlist } from './ItemsList'
-import { useState } from 'react'
+// import { useState } from 'react'
 const RestaurantCategoriesAccordion = ({ data, showItems,setShowIndex }) => {
   // console.log(data)
 
