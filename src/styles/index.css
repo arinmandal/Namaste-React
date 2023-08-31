@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities{
+  .hide-scroll{
+    overflow-y: scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none; 
+  }
+  .hide-scroll::-webkit-scrollbar{
+    display: none;
+  } 
+}
