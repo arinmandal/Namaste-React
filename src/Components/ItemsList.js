@@ -5,7 +5,7 @@ export const Itemlist = ({ items }) => {
     <div className="">
       {
         items.map((items) => (
-          <div key={items.card.info.id} className="my-1 border-b-2">
+          <div key={items.card.info.id} className="my-1 border-b-2 ">
             <div className="py-1 px-4 flex justify-between items-center">
               <div className="content">
                 <h3 className="font-bold">{items.card.info.name}</h3>
