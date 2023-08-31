@@ -4,8 +4,8 @@ import ShimmerUI from "./ShimmerUI";
 // import restaurantList from "../utils/mockData"
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
-import { RESTAURANT } from "../utils/constant";
-import useOnlineStatus from "../utils/useOnlineStatus";
+import { RESTAURANT} from "../utils/constant";
+import useOnlineStatus from "../Utils/useOnlineStatus";
 const Body = () => {
   // State Variable - super powerful variable
   const [RestaurantList, setRestaurantList] = useState([]);
@@ -22,7 +22,6 @@ const Body = () => {
 
   const fetchData = async () => {
     const data = await fetch(RESTAURANT);
-
     const json = await data.json();
     // Optional Chaining
     setRestaurantList(json?.data?.cards[1]?.groupedCard?.cardGroupMap?.RESTAURANT?.cards
@@ -46,7 +45,7 @@ const Body = () => {
 
   return RestaurantList.length === 0 ? <ShimmerUI /> : (
     <div className='main'>
-      <div className='search-container flex items-center w-full  px-4 pb-2 bg-slate-500'>
+      <div className='search-container flex items-center w-full  px-4 pb-2 bg-slate-500 '>
         <input  className=" w-[30%] rounded-2xl p-1 outline-none" type='search' placeholder='Search your favorite restaurant' value={searchText} onChange={(e) => setSearchText(e.target.value)} />
         <button className='search-btn btn rounded-2xl bg-gray-300 py-1 px-4 mx-2'
           onClick={() => {
