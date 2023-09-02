@@ -1,11 +1,13 @@
 import React from 'react'
-
+import { DotPulse } from '@uiball/loaders'
 const MenuShimmer = () => {
   return (
-    <div className='h-screen w-[60%] mx-auto  border-2 solid-black'>
-      <h1 className='text-center'>
-        loading...
-      </h1>
+    <div className='h-screen w-[60%] mx-auto  border-2 solid-black flex justify-center items-center'>
+        <DotPulse
+          size={40}
+          speed={1.3}
+          color="black"
+        />
     </div>
   )
 }
