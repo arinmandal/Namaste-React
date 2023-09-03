@@ -7,6 +7,7 @@ const RestaurantCard = ({ restaurantData }) => {
     avgRating,
     cloudinaryImageId,
   } = restaurantData?.info;
+
   return (
     <div className="card-container">
       <div className='card w-[250px] h-[330px] border my-2 bg-slate-400 rounded-lg overflow-hidden transition ease-out duration-300 hover:shadow-lg hover:shadow-blue-500'>
@@ -34,7 +35,7 @@ const RestaurantCard = ({ restaurantData }) => {
 // Higher order component
 // input - RestaurantCard => RestaurantCard Promoted
 
-export const withPromotedLabel= (RestaurantCard) => {
+export const withPromotedLabel = (RestaurantCard) => {
   return (props) => {
     return (
       <div>

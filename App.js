@@ -43,7 +43,7 @@
 
 // root.render(<HeadingComponent/>);
 
-import React, { Suspense, lazy } from "react";
+import React, { Suspense, lazy, useEffect, useState } from "react";
 import ReactDOM from "react-dom/client";
 import "/src/styles/index.css"
 import Header from "/src/Components/Header"
@@ -52,24 +52,37 @@ import Body from "/src/Components/Body";
 import About from "/src/Pages/About";
 import Error from "/src/Pages/Error";
 import RestaurantMenu from "/src/Pages/RestaurantMenu"
-// import Grocery from "./Components/Grocery";
-import {
-  createBrowserRouter,
-  RouterProvider, Outlet
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Contact from "./src/Pages/Contact";
-// *! not using key(not acceptable in react it will give you an error) <<< index as key <<< using unique id
+import UserContext from "./src/Utils/UserContext";
+//  not using key(not acceptable in react it will give you an error) <<< index as key <<< using unique id
 
 // Lazy Loading 
 const Grocery = lazy(() => import("./src/Components/Grocery"))
 
 const App = () => {
+  const [userNames, setUserName] = useState();
+  // authentication logic
+  useEffect(() => {
+    // Make an api call and send name and password
+    const data = {
+      name: "Arin"
+    }
+
+    setUserName(data.name)
+  }, [])
+
   return (
     <div className='App'>
-      <Header />
-      <Outlet />
-      <Footer />
+      <UserContext.Provider value={{ loggedInUser: userNames, setUserName }}>
+        {/* <UserContext.Provider value={{ loggedInUser: "Elon Musk" }}> */}
+        {/* </UserContext.Provider> */}
+        <Header />
+        <Outlet />
+        <Footer />
+      </UserContext.Provider>
     </div>
+
   );
 };
 
@@ -84,7 +97,7 @@ const appRouter = createBrowserRouter([
       },
       {
         path: "/grocery",
-        element: <Suspense fallback={<h1>Loading...</h1>}><Grocery/></Suspense>
+        element: <Suspense fallback={<h1>Loading...</h1>}><Grocery /></Suspense>
       },
       {
         path: "/about",

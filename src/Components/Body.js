@@ -3,15 +3,18 @@ import RestaurantCard, {withPromotedLabel} from "./RestaurantCard"
 import ShimmerUI from "./ShimmerUI";
 // import restaurantList from "../utils/mockData"
 import { Link } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { RESTAURANT} from "../utils/constant";
 import useOnlineStatus from "../Utils/useOnlineStatus";
+// import UserContext from "../Utils/UserContext";
 const Body = () => {
   // State Variable - super powerful variable
   const [RestaurantList, setRestaurantList] = useState([]);
   const [filterRestaurant, setfilterRestaurant] = useState([]);
   const [searchText, setSearchText] = useState("");
 
+  // const { loggedInUser, setUserName } = useContext(UserContext);
+   console.log(setUserName)
   // Restaurant card with promoted lebel
   
   const RestaurantCardWithPromoted = withPromotedLabel(RestaurantCard);
@@ -65,6 +68,7 @@ const Body = () => {
           >
             Top Rated Restaurants
           </button>
+          {/* <input  className=" w-[30%] rounded-2xl bg-gray-300 py-1 px-4 mx-2 outline-none" value={loggedInUser} onChange={(e) => setUserName(e.target.value)} /> */}
         </div>
       </div>
       <div className='res-container h-full w-full px-4 flex justify-evenly flex-wrap '>
