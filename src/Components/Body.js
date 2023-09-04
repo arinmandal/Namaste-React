@@ -14,7 +14,6 @@ const Body = () => {
   const [searchText, setSearchText] = useState("");
 
   // const { loggedInUser, setUserName } = useContext(UserContext);
-   console.log(setUserName)
   // Restaurant card with promoted lebel
   
   const RestaurantCardWithPromoted = withPromotedLabel(RestaurantCard);
