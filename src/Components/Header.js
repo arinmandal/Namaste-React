@@ -1,16 +1,19 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { useContext } from "react";
+// import { useContext } from "react";
 import useOnlineStatus from "../utils/useOnlineStatus";
 // import UserContext from "../Utils/UserContext";
-
+import { useSelector } from "react-redux";
 const Header = () => {
 
   const [btnName, setbtnName] = useState("Login");
 
   // const { loggedInUser } = useContext(UserContext);
 
+  // Subscribing to the redux store using useSelector hooks
 
+  const cartItems = useSelector((store) => store.cart.items);
+  // console.log(cartItems)
   const onlineStatus = useOnlineStatus();
   return (
     <div className='header w-full bg-slate-500 flex items-center justify-between px-4'>
@@ -32,7 +35,8 @@ const Header = () => {
           <li className="px-4"><Link className="link" to="/grocery">Grocery</Link></li>
           <li className="px-4"><Link className="link" to="/about">About</Link></li>
           <li className="px-4"><Link className="link" to="/contact">Contact Us</Link></li>
-          <li className="px-4">Cart</li>
+          <li className="px-4"><Link className="link" to="/cart"
+          >Cart ({cartItems.length}items) </Link></li>
           <li className="px-4">
             <button className="btn rounded-2xl bg-gray-300 py-1 px-4"
               onClick={

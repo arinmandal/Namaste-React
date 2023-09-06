@@ -55,6 +55,9 @@ import RestaurantMenu from "/src/Pages/RestaurantMenu"
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Contact from "./src/Pages/Contact";
 import UserContext from "./src/Utils/UserContext";
+import { Provider } from "react-redux";
+import appStore from "./src/ReduxStore/appStore";
+import Cart from "./src/Components/Cart";
 //  not using key(not acceptable in react it will give you an error) <<< index as key <<< using unique id
 
 // Lazy Loading 
@@ -73,16 +76,17 @@ const App = () => {
   }, [])
 
   return (
-    <div className='App'>
+    <Provider store={appStore}>
       <UserContext.Provider value={{ loggedInUser: userNames, setUserName }}>
-        {/* <UserContext.Provider value={{ loggedInUser: "Elon Musk" }}> */}
-        {/* </UserContext.Provider> */}
-        <Header />
-        <Outlet />
-        <Footer />
+        <div className='App'>
+          {/* <UserContext.Provider value={{ loggedInUser: "Elon Musk" }}> */}
+          {/* </UserContext.Provider> */}
+          <Header />
+          <Outlet />
+          <Footer />
+        </div>
       </UserContext.Provider>
-    </div>
-
+    </Provider>
   );
 };
 
@@ -110,6 +114,10 @@ const appRouter = createBrowserRouter([
       {
         path: "/restaurants/:resId",
         element: <RestaurantMenu />
+      },
+      {
+        path: "/cart",
+        element:<Cart/>
       }
     ],
     errorElement: <Error />
