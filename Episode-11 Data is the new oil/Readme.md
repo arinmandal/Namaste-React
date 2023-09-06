@@ -28,3 +28,54 @@ Higher order components is a function that takes the components and return a ena
  Props drilling means we need to pass some data through several nested child component in order to get that data into some deeply nested component.
  
 ![Props Drilling](PropsDrilling-2023-09-04-1356.png)
+
+## React Context
+React context is a way to manage data globally.
+
+- How to create an userContext using `createContext()`
+  ```
+  import {createContext} from "react";
+  const userContext = createContext({
+     loggedInUser:"Default User",
+  });
+
+  export default userContext;
+  ```
+- How can we access the `userContext` from anywhere in our app?
+    ```
+    import {useContext} from "react";
+    import userContext from "...utils/userContext";  ( "...utils/userContext" - File location of your context file)
+    const loggedInUser = useContext(userContext);
+    ```
+## Context.Consumer
+Use a context consumer whenever you need the data from the store
+- snippets (Context.Comsumer in Class based component)
+  ```
+  import userContext from "...utils/userContext";
+  <userContext.Consumer>
+  {({loggedInUser}) => <h1> {loogedInUser} </h1>}
+  </userContext.Comsumer>
+  
+  ```
+## Context.Provider
+Setup a context provider and define the data which you want to store.
+- Snippets
+  ```
+  const [userName, setUserName] = useState();
+  useEffect(() => {
+     const data = {
+        name :"Arin Mandal",
+      }
+  }, [])
+  ```
+  ```
+  <userContext.Provider value={{loggedInUser: userName}})
+  // authentication logic
+  useEffect(() => {
+    // Make an api call and send name and password
+    const data = {
+      name: "Arin"
+    }
+  </userContext.Provider>
+  ```
+  ![Context Untitled-2023-09-04-1708](https://github.com/arinmandal/Namaste-React/assets/54814983/e4c8ed7c-85de-4154-ba92-c2db17ee522e)
