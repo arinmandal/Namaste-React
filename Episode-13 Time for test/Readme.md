@@ -118,3 +118,32 @@ Let's get started by writing a test for a hypothetical function that adds two nu
   - Test Fail 
   
   ![Alt text](image-4.png)
+
+## Testing React Component
+- Install **@babel/preset-react** library to make JSX work in Test cases
+  
+  ```
+   npm install @babel/preset-react
+  ```
+ - Configure **@babel/preset-react** inside **babel.config.js** file
+  
+    ```
+    module.exports = {
+    presets: [['@babel/preset-env', { targets: { node: 'current' } }],
+    ['@babel/preset-react', { runtime: "automatic" }]
+    ],
+    };
+
+    ```
+
+- You want to use jest to write tests that assert various things about the state of a DOM. As part of that goal, you want to avoid all the repetitive patterns that arise in doing so. Checking for an element's attributes, its text content, its css classes, you name it.    
+    
+    - Install **@testing-library/jest-dom**
+
+    ```
+    npm i @testing-library/jest-dom
+    ```
+
+### Testing **`<Contact />`** Component   
+
+![Alt text](<React Testing-2023-09-04-1708.png>)
