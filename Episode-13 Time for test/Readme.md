@@ -147,3 +147,29 @@ Let's get started by writing a test for a hypothetical function that adds two nu
 ### Testing **`<Contact />`** Component   
 
 ![Alt text](<React Testing-2023-09-04-1708.png>)
+
+  - Test function name :
+    
+    - **test()**
+      
+      ```
+      test('should load contact us component', () => {
+      render(<Contact />)
+
+      const heading = screen.getByRole("heading")
+      expect(heading).toBeInTheDocument()
+      })
+
+      ```  
+
+    - **it()**
+      
+      ```
+      it('should load contact us component', () => {
+      render(<Contact />)
+
+      const heading = screen.getByRole("heading")
+      expect(heading).toBeInTheDocument()
+      })
+
+      ```      
