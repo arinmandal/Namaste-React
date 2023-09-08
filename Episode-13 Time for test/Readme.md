@@ -97,3 +97,18 @@ If you're using **Jest 28** or later, jest-environment-jsdom package now must be
 ```
 npm install --save-dev jest-environment-jsdom
 ```
+## How to write test cases 
+Let's get started by writing a test for a hypothetical function that adds two numbers. First, 
+- create a **sum.js** file
+![Alt text](image.png)
+
+- Then, create a file named **sum.test.js** This will contain our actual test:
+  ![Alt text](image-1.png)
+  - Pass test cases
+   ![Alt text](image-2.png)
+
+- 2nd Test Cases 
+![Alt text](image-3.png)
+
+  - Test Fail 
+  ![Alt text](image-4.png)
