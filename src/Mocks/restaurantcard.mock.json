@@ -1,0 +1,131 @@
+{
+  "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+  "info": {
+      "id": "368032",
+      "name": "Chowman",
+      "city": "7",
+      "slugs": {
+          "restaurant": "chowman-burrabazar-burrabazar",
+          "city": "kolkata"
+      },
+      "cloudinaryImageId": "06d12ec700e4118d159fab6c3a7256dd",
+      "address": "118, Ground Floor, Raja Dinendra Street.kolkata Kolkata, West Bengal 700004",
+      "locality": "Maniktala",
+      "areaName": "Maniktala",
+      "costForTwo": "70000",
+      "costForTwoMessage": "₹700 FOR TWO",
+      "cuisines": [
+          "Chinese",
+          "Asian",
+          "Thai",
+          "Oriental",
+          "Burmese",
+          "Tibetan"
+      ],
+      "avgRating": 4.4,
+      "feeDetails": {
+          "restaurantId": "368032",
+          "fees": [
+              {
+                  "name": "BASE_DISTANCE",
+                  "fee": 4200
+              },
+              {
+                  "name": "BASE_TIME"
+              },
+              {
+                  "name": "ANCILLARY_SURGE_FEE"
+              }
+          ],
+          "totalFee": 4200,
+          "title": "Delivery Charge",
+          "amount": "4200"
+      },
+      "avgRatingString": "4.4",
+      "totalRatingsString": "10K+",
+      "promoted": true,
+      "adTrackingId": "cid=8306735~p=2~eid=0000018a-78e3-fd07-0293-14fc0007024b~srvts=1694245321991",
+      "sla": {
+          "deliveryTime": 31,
+          "minDeliveryTime": 31,
+          "maxDeliveryTime": 31,
+          "lastMileTravel": 3.5,
+          "serviceability": "SERVICEABLE",
+          "rainMode": "RAIN_MODE_NONE",
+          "slaString": "31 MINS",
+          "lastMileTravelString": "3.5 km",
+          "iconType": "ICON_TYPE_EMPTY"
+      },
+      "availability": {
+          "opened": true,
+          "restaurantClosedMeta": {}
+      },
+      "aggregatedDiscountInfo": {
+          "header": "Flat ₹125 off",
+          "shortDescriptionList": [
+              {
+                  "meta": "Flat ₹125 off on orders above ₹249",
+                  "discountType": "Flat",
+                  "operationType": "RESTAURANT"
+              }
+          ],
+          "descriptionList": [
+              {
+                  "meta": "Flat ₹125 off on orders above ₹249 | Use code SWIGGYWEEKENDS",
+                  "discountType": "Flat",
+                  "operationType": "RESTAURANT"
+              }
+          ]
+      },
+      "badges": {},
+      "aggregatedDiscountInfoV2": {
+          "header": "₹125 off",
+          "shortDescriptionList": [
+              {
+                  "meta": "₹125 off",
+                  "discountType": "Flat",
+                  "operationType": "RESTAURANT"
+              }
+          ],
+          "descriptionList": [
+              {
+                  "meta": "Flat ₹125 off on orders above ₹249 | Use code SWIGGYWEEKENDS",
+                  "discountType": "Flat",
+                  "operationType": "RESTAURANT"
+              }
+          ],
+          "subHeader": "FLAT DEAL",
+          "headerType": "HEADER_TYPE_2"
+      },
+      "ratingSlab": "RATING_SLAB_5",
+      "orderabilityCommunication": {
+          "title": {},
+          "subTitle": {},
+          "message": {},
+          "customIcon": {}
+      },
+      "cartOrderabilityNudgeBanner": {
+          "parameters": {},
+          "presentation": {}
+      }
+  },
+  "analytics": {
+      "screenName": "explore",
+      "context": "{\"tid\":\"undefined\",\"grid\":\"5e8a0404-c10a-4339-b1ad-3c12a987c2ad\",\"queryUniqueId\":\"d8d50207-c049-6902-2c11-98faf582567a\",\"query\":\"Restaurants in kolkata\",\"adTrackingId\":\"cid=8306735~p=2~eid=0000018a-78e3-fd07-0293-14fc0007024b~srvts=1694245321991\"}",
+      "objectValue": "368032",
+      "impressionObjectName": "impression-restaurant-ad",
+      "clickObjectName": "click-restaurant-ad"
+  },
+  "ctaWithParams": {
+      "link": "swiggy://menu",
+      "type": "DEEPLINK",
+      "params": {
+          "isSld": "false",
+          "sourceRequestId": "64fc21c9d1e0ab165e2ac53803a2666a",
+          "restaurant_id": "368032",
+          "query": "Restaurants in kolkata",
+          "sourceSessionId": "98d361a5-ff1f-4f16-9dfd-8f86118ec2e8",
+          "source": "SEARCH"
+      }
+  }
+}

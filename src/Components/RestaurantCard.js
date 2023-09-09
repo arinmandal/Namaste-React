@@ -7,7 +7,8 @@ const RestaurantCard = ({ restaurantData }) => {
     avgRating,
     cloudinaryImageId,
   } = restaurantData?.info;
-
+  
+  // console.log(restaurantData)
   return (
     <div className="card-container">
       <div className='card w-[250px] h-[330px] border my-2 bg-slate-400 rounded-lg overflow-hidden transition ease-out duration-300 hover:shadow-lg hover:shadow-blue-500'>
