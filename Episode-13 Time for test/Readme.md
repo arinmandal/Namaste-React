@@ -173,3 +173,85 @@ Let's get started by writing a test for a hypothetical function that adds two nu
       })
 
       ```      
+
+### How to make fake API call inside test
+Fake API calls are also known as mocks or stubs, which are simulated responses that mimic the behavior of real API calls without actually making network requests. Mocking or stubbing API calls can help you isolate the code under test, avoid external dependencies, and speed up the testing process.
+
+![Alt text](MockAPI-2023-09-04-1708.png)
+
+- Test cases for search "dhaba" text input in our project.
+  
+  ```
+
+  import { fireEvent, render, screen } from "@testing-library/react"
+  import "@testing-library/jest-dom"
+  import Body from "../Components/Body"
+  import mock_data from "../Mocks/mockRestraList.data.json"
+  import { BrowserRouter } from "react-router-dom"
+  import { act } from "react-dom/test-utils"
+
+  global.fetch = jest.fn(() => {
+    return Promise.resolve({
+      json: () => {
+        return Promise.resolve(mock_data)
+      }
+    })
+  })
+
+   <!-- Test cases for Search "dhaba" text input inside Body -->
+
+  it("Should Search for dhaba text input", async () => {
+    await act(async () => render(
+      <BrowserRouter>
+        <Body />
+      </BrowserRouter>
+    ))
+
+
+   <!-- render initially load cards -->
+
+    const cardBeforeSearch = screen.getAllByTestId("resCard")
+    expect(cardBeforeSearch.length).toBe(102);
+
+   <!-- find search button inside body component -->
+    const searchButton = screen.getByRole("button", { name: "Search" })
+    
+    <!-- Find input box with Testid -->
+    const inputBox = screen.getByTestId("searchInput");
+
+     <!-- search text -->
+    fireEvent.change(inputBox, { target: { value: "dhaba" } })
+    
+    <!-- Button Click  -->
+    fireEvent.click(searchButton)
+
+    <!-- find card after search -->
+    const cardAfterSearch = screen.getAllByTestId("resCard")
+    expect(cardAfterSearch.length).toBe(4);
+    })
+
+  ```
+
+  - Helper Function in test file
+  
+  ```
+  describe("Test cases", () => {
+  
+    // Helper function 
+    beforeAll(() => {
+      console.log("Before All")
+    })
+    beforeEach(() => {
+      console.log("Before Each")
+    })
+
+    afterEach(() => {
+      console.log("After Each")
+    })
+    afterAll(() => {
+      console.log("After All")
+    })
+
+  })
+    
+  ```
