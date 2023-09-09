@@ -10,7 +10,8 @@ const RestaurantCard = ({ restaurantData }) => {
   
   // console.log(restaurantData)
   return (
-    <div className="card-container">
+    <div data-testid="resCard"
+      className="card-container">
       <div className='card w-[250px] h-[330px] border my-2 bg-slate-400 rounded-lg overflow-hidden transition ease-out duration-300 hover:shadow-lg hover:shadow-blue-500'>
         <div className='card-image h-3/6 overflow-hidden'>
           <img className="w-full "
