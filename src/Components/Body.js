@@ -48,7 +48,12 @@ const Body = () => {
   return RestaurantList.length === 0 ? <ShimmerUI /> : (
     <div className='main'>
       <div className='search-container flex items-center w-full  px-4 pb-2 bg-slate-500 '>
-        <input  className=" w-[30%] rounded-2xl p-1 outline-none" type='search' placeholder='Search your favorite restaurant' value={searchText} onChange={(e) => setSearchText(e.target.value)} />
+        <input className=" w-[30%] rounded-2xl p-1 outline-none" type='search'
+          placeholder='Search your favorite restaurant'
+          value={searchText}
+          onChange={(e) => setSearchText(e.target.value)}
+          data-testid="searchInput"
+        />
         <button className='search-btn btn rounded-2xl bg-gray-300 py-1 px-4 mx-2'
           onClick={() => {
             const filterSearch = RestaurantList.filter((res) => res.card.card.info.name.toLowerCase().includes(searchText.toLowerCase()))
