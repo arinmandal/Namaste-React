@@ -1,7 +1,7 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Itemlist } from "./ItemsList"
-import {clearCart} from "/src/ReduxStore/cartSlice"
+import { clearCart } from '../ReduxStore/CartSlice'
 const Cart = () => {
   const cartItems = useSelector((store) => store.cart.items)
 
@@ -9,7 +9,6 @@ const Cart = () => {
   // const store = useSelector((store) => store)
   // const cartItems = store.cart.items
   // console.log(cartItems)
-
   const dispatch = useDispatch();
   const removeAll = () => {
     dispatch(clearCart())
