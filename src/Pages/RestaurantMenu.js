@@ -1,7 +1,7 @@
 import useRestaurantMenu from "../utils/useRestaurantMenu";
 import MenuShimmer from "../Components/MenuShimmer";
 import { useParams } from "react-router-dom";
-import RestaurantCategoriesAccordion from "../Components/RestaurantCategoriesAccordion";
+import RestaurantCategories from "../Components/RestaurantCategories";
 import { useState } from "react";
 const RestaurantMenu = () => {
   const { resId } = useParams();
@@ -43,7 +43,7 @@ const RestaurantMenu = () => {
       {/* {Categories Accordion} */}
       {categories.map((category, index) =>
         // controlled component
-        <RestaurantCategoriesAccordion
+        <RestaurantCategories
           key={category.card.card.title}
           data={category}
           showItems={index === showIndex ? true : false}
