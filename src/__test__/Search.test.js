@@ -16,19 +16,19 @@ global.fetch = jest.fn(() => {
 describe("Body component test case", () => {
 
   // Helper function 
-  beforeAll(() => {
-    console.log("Before All")
-  })
-  beforeEach(() => {
-    console.log("Before Each")
-  })
+  // beforeAll(() => {
+  //   console.log("Before All")
+  // })
+  // beforeEach(() => {
+  //   console.log("Before Each")
+  // })
 
-  afterEach(() => {
-    console.log("After Each")
-  })
-  afterAll(() => {
-    console.log("After All")
-  })
+  // afterEach(() => {
+  //   console.log("After Each")
+  // })
+  // afterAll(() => {
+  //   console.log("After All")
+  // })
   
  
   // Test cases for Search "dhaba" text input inside Body
