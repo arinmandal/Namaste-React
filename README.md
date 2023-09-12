@@ -39,3 +39,15 @@
 
 ## 📚[Episode 09 - Optimising our app](https://github.com/arinmandal/Namaste-React/tree/main/Episode-9%20Optimizing%20Our%20App)
 - ### 📝[Assignment](https://github.com/arinmandal/Namaste-React/tree/main/ASSIGNMENT/Episode-9)
+
+## 📚[Episode 10 - Jo dikhta hai, vo bikta hai](https://github.com/arinmandal/Namaste-React/tree/main/Episode-10%20Jo%20dikhta%20hai%2C%20vo%20bikta%20hai)
+- ### 📝[Assignment](https://github.com/arinmandal/Namaste-React/tree/main/ASSIGNMENT/Episode-10)
+
+## 📚[Episode 11 - Data is the new oil](https://github.com/arinmandal/Namaste-React/tree/main/Episode-11%20Data%20is%20the%20new%20oil)
+- ### 📝[Assignment](https://github.com/arinmandal/Namaste-React/tree/main/ASSIGNMENT/Episode-11)
+
+## 📚[Episode 12 - Let's build our store](https://github.com/arinmandal/Namaste-React/tree/main/Episode-12%20Let's%20build%20our%20store)
+- ### 📝[Assignment](https://github.com/arinmandal/Namaste-React/tree/main/ASSIGNMENT/Episode-12)
+
+## 📚[Episode 13 - Time for the test](https://github.com/arinmandal/Namaste-React/tree/main/Episode-13%20Time%20for%20test)
+- ### 📝[Assignment](https://github.com/arinmandal/Namaste-React/tree/main/ASSIGNMENT/Episode-13)
