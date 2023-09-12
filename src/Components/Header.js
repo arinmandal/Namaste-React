@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { FaCartShopping } from "react-icons/fa6";
 // import { useContext } from "react";
 import useOnlineStatus from "../utils/useOnlineStatus";
 // import UserContext from "../Utils/UserContext";
@@ -29,14 +30,17 @@ const Header = () => {
           className='logo'
         />
       </div>
-      <div className='nav-list text-white font-bold flex items-center justify-center'>
-        <ul className="flex">
+      <div className='nav-list text-white font-bold h-[70%] '>
+        <ul className="flex items-center justify-center">
           <li className="px-4"><Link className="link" to="/">Home</Link></li>
           <li className="px-4"><Link className="link" to="/grocery">Grocery</Link></li>
           <li className="px-4"><Link className="link" to="/about">About</Link></li>
           <li className="px-4"><Link className="link" to="/contact">Contact Us</Link></li>
-          <li className="px-4"><Link className="link" to="/cart"
-          >Cart ({cartItems.length}items) </Link></li>
+          <li className="px-4 ">
+            <Link className="" to="/cart">
+           <span className="px-3 text-xs"> {cartItems.length}</span><FaCartShopping className="text-3xl"/>
+            </Link>
+        </li>
           <li className="px-4">
             <button className="btn rounded-2xl bg-gray-300 py-1 px-4"
               onClick={

@@ -4,7 +4,7 @@ import ShimmerUI from "./ShimmerUI";
 // import restaurantList from "../utils/mockData"
 import { Link } from "react-router-dom";
 import { useState, useEffect, useContext } from "react";
-import { RESTAURANT} from "../utils/constant.js";
+import { RESTAURANT} from "../utils/constant";
 import useOnlineStatus from "../Utils/useOnlineStatus";
 // import UserContext from "../Utils/UserContext";
 const Body = () => {
