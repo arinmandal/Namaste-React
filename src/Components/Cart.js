@@ -14,7 +14,7 @@ const Cart = () => {
     dispatch(clearCart())
   }
   return (
-    <div className='h-[calc(100vh-105px)] w-[70%] mx-auto my-4 bg-slate-300 rounded-md'>  
+    <div className='min-h-[calc(100vh-105px)] w-[70%] mx-auto my-4 bg-slate-300 rounded-md'>  
       <div className='mx-4 p-5 flex justify-between'>
       <h1 className='font-bold text-2xl text-white '>Cart</h1>
       <button className='bg-red-400 rounded-md p-2' onClick={removeAll}>Clear All</button>
