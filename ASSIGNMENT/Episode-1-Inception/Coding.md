@@ -33,7 +33,7 @@
 
     ```
     const root = document.getElementById("root");
-    const heading = createElement("h1");
+    const heading = document.createElement("h1");
     heading.innerHTML = "Hello World"
     root.appendChild(heading)
 
