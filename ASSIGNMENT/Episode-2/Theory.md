@@ -171,3 +171,22 @@ For example  in `package.json` file:
 
 ## 14) What is `browserslist`?
  `Browserslist` is a tool that allows specifying which browsers should be supported in your frontend app by specifying "queries" in a config file. It's used by frameworks/libraries such as React, Angular and Vue, but it's not limited to them.
+ 
+## 15) Difference between Caret("^") & Tilde("~") ?
+
+In the context of version numbers in software development, the caret (^) and tilde (~) are used as prefix characters in dependency declarations to indicate the acceptable range of versions for a package. However, they have slightly different behaviors:
+
+- Caret (^):
+
+Example: ^1.2.3
+Behavior: Allows changes to the specified version but keeps the leftmost non-zero digit fixed. It's often used for specifying that you will accept any compatible new features or bug fixes, but not breaking changes.
+Explanation: For version 1.2.3, the caret allows upgrading to any version that is compatible with 1.x.x but not to 2.0.0 or higher.
+- Tilde (~):
+
+Example: ~1.2.3
+Behavior: Allows changes to the specified version but keeps the rightmost non-zero digit fixed. It's typically used to indicate that you will accept bug fixes but not new features or breaking changes.
+Explanation: For version 1.2.3, the tilde allows upgrading to any version that is compatible with 1.2.x but not to 1.3.0 or higher.
+Here's a quick summary:
+
+Caret (^): Permits compatible updates, including new features, but not breaking changes. It fixes the leftmost non-zero digit.
+Tilde (~): Permits only bug fix updates. It fixes the rightmost non-zero digit.
