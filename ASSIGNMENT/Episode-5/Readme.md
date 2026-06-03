@@ -1,4 +1,4 @@
-# Episode 04 - Let's get hooked
+# Episode 05 - Let's get hooked
 
 ### Assignment
 
